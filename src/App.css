@@ -10,3 +10,7 @@
 .operator {
   background-color: red;
 }
+
+.active {
+  color: #8a4baf;
+}
