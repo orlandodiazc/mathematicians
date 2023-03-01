@@ -1,6 +1,6 @@
 const NotMatch = () => (
   <div>
-    <p>Not found!</p>
+    <p>This page does not exist</p>
   </div>
 );
 export default NotMatch;
