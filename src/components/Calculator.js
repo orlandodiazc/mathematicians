@@ -1,5 +1,28 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import CalcButton from './CalcButton';
+
+const buttonNames = [
+  { name: 'AC', type: 'normal' },
+  { name: '+/-', type: 'normal' },
+  { name: '%', type: 'normal' },
+  { name: '÷', type: 'operator' },
+  { name: '7', type: 'normal' },
+  { name: '8', type: 'normal' },
+  { name: '9', type: 'normal' },
+  { name: 'x', type: 'operator' },
+  { name: '4', type: 'normal' },
+  { name: '5', type: 'normal' },
+  { name: '6', type: 'normal' },
+  { name: '-', type: 'operator' },
+  { name: '1', type: 'normal' },
+  { name: '2', type: 'normal' },
+  { name: '3', type: 'normal' },
+  { name: '+', type: 'operator' },
+  { name: '0', type: 'col-6' },
+  { name: '.', type: 'normal' },
+  { name: '=', type: 'operator' },
+];
 
 const Calculator = () => {
   const [display, setDisplay] = useState({ total: '0', next: null, operation: null });
@@ -18,63 +41,11 @@ const Calculator = () => {
         {next}
       </div>
       <div className="row row-cols-4 text-center">
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          AC
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          +/-
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          %
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator operator">
-          ÷
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          7
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          8
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          9
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator operator">
-          x
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          4
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          5
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          6
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator operator">
-          -
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          1
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          2
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          3
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator operator">
-          +
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator col-6">
-          0
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator">
-          .
-        </button>
-        <button onClick={handleBtnClick} type="button" className="btn-calculator operator">
-          =
-        </button>
+        {buttonNames.map((btn) => (
+          <CalcButton key={btn.name} handleBtnClick={handleBtnClick} type={btn.type}>
+            {btn.name}
+          </CalcButton>
+        ))}
       </div>
     </div>
   );
