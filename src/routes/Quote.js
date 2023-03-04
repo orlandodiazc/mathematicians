@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Quote = () => (
-  <div className="container h-100 d-flex align-items-center justify-content-center">
+  <div className="container text-center">
     <p>Mathematics is not about numbers --William Paul Thurston</p>
   </div>
 );

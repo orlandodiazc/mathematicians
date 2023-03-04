@@ -8,7 +8,7 @@ const links = [
 ];
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <nav className="navbar navbar-dark navbar-expand-sm text-bg-dark">
     <div className="container">
       <a className="navbar-brand" href="/">
         Mathematicians
@@ -25,7 +25,7 @@ const Navbar = () => (
         <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ms-auto pe-5">
           {links.map((link) => (
             <li className="nav-item" key={link.text}>
               <NavLink className="nav-link" to={link.path}>

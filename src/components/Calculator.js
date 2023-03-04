@@ -3,17 +3,19 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [display, setDisplay] = useState({ total: '0', next: null, operation: null });
+  const { total, next, operation } = display;
 
   const handleBtnClick = (e) => {
-    setDisplay(calculate(display, e.target.innerText));
+    const res = calculate(display, e.target.textContent);
+    setDisplay(res);
   };
 
   return (
     <div id="calculator" className="container bg-secondary">
-      <div className="text-end py-2">
-        {display.total}
-        {display.operation}
-        {display.next}
+      <div data-testid="display" className="text-end py-2">
+        {total}
+        {operation}
+        {next}
       </div>
       <div className="row row-cols-4 text-center">
         <button onClick={handleBtnClick} type="button" className="btn-calculator">
