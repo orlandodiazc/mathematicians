@@ -36,6 +36,6 @@ it('CalcButton.js', () => {
   );
   expect(tree).toMatchSnapshot();
   const button = screen.getByRole('button');
-  expect(button.textContent).toBe('AC');
+  expect(button).toHaveTextContent('AC');
   expect(button).not.toBeDisabled();
 });
