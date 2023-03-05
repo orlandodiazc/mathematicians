@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { act } from 'react-dom/test-utils';
 import { BrowserRouter } from 'react-router-dom';
+import CalcButton from '../components/CalcButton';
 import Calculator from '../components/Calculator';
 import Navbar from '../components/Navbar';
 
@@ -23,4 +24,18 @@ it('Navbar.js', () => {
     </BrowserRouter>,
   );
   expect(tree).toMatchSnapshot();
+});
+
+it('CalcButton.js', () => {
+  const handleBtnClick = jest.fn();
+  const btn = { name: 'AC', type: 'operator' };
+  const tree = render(
+    <CalcButton key={btn.name} handleBtnClick={handleBtnClick} type={btn.type}>
+      {btn.name}
+    </CalcButton>,
+  );
+  expect(tree).toMatchSnapshot();
+  const button = screen.getByRole('button');
+  expect(button.textContent).toBe('AC');
+  expect(button).not.toBeDisabled();
 });

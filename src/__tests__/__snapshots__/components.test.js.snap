@@ -1,5 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CalcButton.js 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <button
+        class="btn-calculator operator"
+        type="button"
+      >
+        AC
+      </button>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="btn-calculator operator"
+      type="button"
+    >
+      AC
+    </button>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`Calculator.js 1`] = `
 Object {
   "asFragment": [Function],
@@ -19,19 +94,19 @@ Object {
           class="row row-cols-4 text-center"
         >
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             AC
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             +/-
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             %
@@ -43,19 +118,19 @@ Object {
             ÷
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             7
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             8
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             9
@@ -67,19 +142,19 @@ Object {
             x
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             4
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             5
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             6
@@ -91,19 +166,19 @@ Object {
             -
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             1
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             2
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             3
@@ -121,7 +196,7 @@ Object {
             0
           </button>
           <button
-            class="btn-calculator"
+            class="btn-calculator "
             type="button"
           >
             .
@@ -151,19 +226,19 @@ Object {
         class="row row-cols-4 text-center"
       >
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           AC
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           +/-
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           %
@@ -175,19 +250,19 @@ Object {
           ÷
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           7
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           8
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           9
@@ -199,19 +274,19 @@ Object {
           x
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           4
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           5
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           6
@@ -223,19 +298,19 @@ Object {
           -
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           1
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           2
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           3
@@ -253,7 +328,7 @@ Object {
           0
         </button>
         <button
-          class="btn-calculator"
+          class="btn-calculator "
           type="button"
         >
           .
@@ -327,7 +402,7 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary"
+        class="navbar navbar-dark navbar-expand-sm text-bg-dark"
       >
         <div
           class="container"
@@ -356,7 +431,7 @@ Object {
             id="navbarNav"
           >
             <ul
-              class="navbar-nav"
+              class="navbar-nav ms-auto pe-5"
             >
               <li
                 class="nav-item"
@@ -397,7 +472,7 @@ Object {
   </body>,
   "container": <div>
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary"
+      class="navbar navbar-dark navbar-expand-sm text-bg-dark"
     >
       <div
         class="container"
@@ -426,7 +501,7 @@ Object {
           id="navbarNav"
         >
           <ul
-            class="navbar-nav"
+            class="navbar-nav ms-auto pe-5"
           >
             <li
               class="nav-item"
