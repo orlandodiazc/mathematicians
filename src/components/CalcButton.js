@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-const CalcButton = ({ handleBtnClick, type, children }) => (
+const CalcButton = ({ handleBtnClick, type = '', children }) => (
   <button
     onClick={handleBtnClick}
     type="button"
@@ -9,5 +10,15 @@ const CalcButton = ({ handleBtnClick, type, children }) => (
     {children}
   </button>
 );
+
+CalcButton.propTypes = {
+  handleBtnClick: PropTypes.func.isRequired,
+  type: PropTypes.string,
+  children: PropTypes.string.isRequired,
+};
+
+CalcButton.defaultProps = {
+  type: '',
+};
 
 export default CalcButton;
