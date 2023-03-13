@@ -1,0 +1,12 @@
+#calculator {
+  max-width: 28rem;
+}
+
+.btn-calculator {
+  height: 3rem;
+  border: 1px solid black;
+}
+
+.operator {
+  background-color: red;
+}
