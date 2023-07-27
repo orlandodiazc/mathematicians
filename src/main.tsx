@@ -1,10 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from "react"
+import ReactDOM from "react-dom/client"
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+// Supports weights 100-900
+import "@fontsource-variable/league-spartan"
+import "./index.css"
+
+import Calculator from "./pages/calculator"
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-     <App />
-  </React.StrictMode>,
+    <Calculator />
+  </React.StrictMode>
 )
