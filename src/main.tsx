@@ -5,10 +5,10 @@ import ReactDOM from "react-dom/client"
 import "@fontsource-variable/league-spartan"
 import "./index.css"
 
-import Calculator from "./pages/calculator"
+import UnitConverter from "./pages/unit-converter"
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Calculator />
+    <UnitConverter />
   </React.StrictMode>
 )
