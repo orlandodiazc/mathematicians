@@ -8,7 +8,6 @@ import { Input } from "./ui/input"
 
 export default function Conversion({ units }: { units: Units }) {
   const unitList: Unit[] = Object.values(units)
-
   const [inputs, setInput] = useState([
     { value: "1", unit: unitList[0] },
     {
@@ -16,8 +15,6 @@ export default function Conversion({ units }: { units: Units }) {
       unit: unitList[1],
     },
   ])
-
-  function convertValue() {}
   return (
     <div className="flex flex-col gap-2">
       {inputs.map(({ value, unit }, id) => {

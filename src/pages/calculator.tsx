@@ -81,10 +81,7 @@ export default function Calculator() {
   }
   const { total, next, operator } = display
   return (
-    <div
-      id="calculator"
-      className="mx-auto flex max-w-md flex-col gap-4 px-2 py-4"
-    >
+    <div id="calculator" className="mx-auto flex max-w-md flex-col gap-4">
       <h1 className="text-4xl font-bold">calc</h1>
       <div
         data-testid="display"

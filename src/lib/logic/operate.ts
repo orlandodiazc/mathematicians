@@ -5,7 +5,6 @@ const operate = (
   operator: Operator,
   stringTwo: string | null
 ) => {
-  console.log(stringOne, stringTwo, operator)
   const numberOne = Number(stringOne)
   const numberTwo = Number(stringTwo)
   if (operator === "+") {

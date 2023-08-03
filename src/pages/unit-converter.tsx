@@ -17,9 +17,9 @@ export type Units = Dimensions[keyof Dimensions]["units"]
 
 export default function UnitConverter() {
   return (
-    <section className="container grid min-h-screen items-center">
+    <section className="mx-auto flex max-w-md flex-col gap-4">
       <div className="space-y-3">
-        <h1 className="text-center text-3xl">Physical Unit Converter</h1>
+        <h1 className=" text-4xl font-bold">converter</h1>
         <div className="grid grid-flow-col items-center justify-center gap-4">
           {Object.values(systems.dimensions).map(({ name, units }) => {
             const upperName = name.charAt(0).toUpperCase() + name.slice(1)
